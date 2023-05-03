@@ -23,7 +23,7 @@
     </script>
     <title>Philip Gudijanto</title>
   </head>
-  <body class= "dark:bg-black dark:text-white">Welcome
+  <body class="dark:bg-darkBlue dark:text-white font-opensans">
     <!--Header-->
     <header class="container mx-auto mt-10 px-6 text-center h-40 md:h-20">
       <!--Dynamic Logo-->
@@ -32,7 +32,10 @@
       <!--menu-->
       <div class= "flex items-center justify-center space-x-4 md:space-x-10 md:absolute top-12 right-10">
         <a href = "#features" class="hover:text-accentCyan">About me</a>
+        <a href = "#features" class="hover:text-accentCyan">Education & Skills</a>
         <a href = "#features" class="hover:text-accentCyan">Experience</a>
+        <a href = "#features" class="hover:text-accentCyan">Projects</a>
+        <a href = "#features" class="hover:text-accentCyan">Contact Me!</a>
 
         <!-- Dark/Light Mode Button -->
         <button
@@ -68,5 +71,55 @@
         </button>
       </div>
     </header>
+    <!-- Hero Section -->
+    <section
+      id="hero"
+      class="bg-curvy-light-mode dark:bg-curvy-dark-mode bg-no-repeat bg-contain bg-bottom"
+    >
+      <!-- Hero Container -->
+      <div class="container mx-auto px-6 text-center md:pt-20 pb-52">
+        <img src="images/illustration-intro.png" alt="" class="mx-auto" />
+        <h1
+          class="max-w-2xl mx-auto mb-10 text-3xl font-bold leading-normal mt-14 md:text-4xl"
+        >
+          About Me!
+        </h1>
+        <p class="max-w-sm mx-auto mb-10 text-sm md:max-w-xl md:text-lg">
+          Hi! My name is Philip and I'm a 4th year student at University of California, Irvine. 
+          I am going to be graduating in June 2023 with a B.S. in Computer Science.
+          <br><br>
+          I started programming during my 1st-year and I have been fascinated with programming 
+          and technology. It's my goal to work as a software engineer. 
+          My experience includes my coursework, work experience as a software engineering intern, 
+          and side projects such as this website!
+        </p>
+        <button class="p-3 rounded-full w-52 bg-accentCyan hover:scale-95">
+          Get Started
+        </button>
+      </div>
+
+    </section>
+      <!-- Hero Container -->
+      <div class="container mx-auto px-6 text-center md:pt-20 pb-52">
+        <img src="images/illustration-intro.png" alt="" class="mx-auto" />
+        <h1
+          class="max-w-2xl mx-auto mb-10 text-3xl font-bold leading-normal mt-14 md:text-4xl"
+        >
+          Education & Skills
+        </h1>
+        <p class="max-w-sm mx-auto mb-10 text-sm md:max-w-xl md:text-lg">
+          <span class="education__title education">Education:</span>
+          <ul class="education__list education">
+            <li class="education__item">University of California - Irvine</li>
+            <li class="education__item">Expected Graduation: June 2023</li>
+            <li class="education__item">B.S. Computer Science</li>
+          </ul>
+        </p>
+        <button class="p-3 rounded-full w-52 bg-accentCyan hover:scale-95">
+          Get Started
+        </button>
+      </div>
+    </section>
+    
   </body>
 </html>
