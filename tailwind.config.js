@@ -14,7 +14,7 @@ module.exports = {
     },
     fontFamily: {
       sans: ['Raleway', 'sans-serif'],
-      opensans: ['open Sans', 'sans-serif']
+      opensans: ['Open Sans', 'sans-serif']
     },
     backgroundImage: (theme) => ({
       'logo-dark-mode': "url('./images/logo-dark.png')",
