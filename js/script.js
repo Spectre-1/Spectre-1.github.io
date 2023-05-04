@@ -36,3 +36,15 @@ function toggleMode() {
     }
   }
 } 
+
+function copyToClipboard() {
+  const message = document.getElementById("message");
+  const range = document.createRange();
+  range.selectNode(message);
+  window.getSelection().removeAllRanges();
+  window.getSelection().addRange(range);
+  const Clipboard = () => {
+    navigator.clipboard.writeText(message.textContent);
+  };
+  alert("Message copied to clipboard!");
+}
