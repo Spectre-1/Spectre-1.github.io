@@ -37,14 +37,23 @@ function toggleMode() {
   }
 } 
 
-function copyToClipboard() {
-  const message = document.getElementById("message");
-  const range = document.createRange();
-  range.selectNode(message);
-  window.getSelection().removeAllRanges();
-  window.getSelection().addRange(range);
-  const Clipboard = () => {
-    navigator.clipboard.writeText(message.textContent);
-  };
-  alert("Message copied to clipboard!");
+function copyItem(button) {
+  const itemToCopy = document.getElementById("item-to-copy").textContent;
+  navigator.clipboard.writeText(itemToCopy);
+  button.textContent = "Item copied!";
+  const confirmed = window.confirm("Item copied to clipboard! Click OK to dismiss this message.");
+  if (confirmed) {
+    button.textContent = "Copy Item";
+  }
+}
+
+
+function goToLinkedIn() {
+  var linkedinUrl = "https://www.linkedin.com/in/philip-gudijanto//";
+  var newTab = window.open(linkedinUrl, "_blank");
+
+  if (!newTab || newTab.closed || typeof newTab.closed == 'undefined') {
+    // Popup blocked
+    alert("Pop-up blocked. Please allow pop-ups for this site and try again.");
+  }
 }

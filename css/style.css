@@ -591,6 +591,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: auto;
 }
 
+.h-full {
+  height: 100%;
+}
+
 .w-20 {
   width: 5rem;
 }
@@ -704,6 +708,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-color: hsl(176 68% 64% / var(--tw-border-opacity));
 }
 
+.border-red-500 {
+  --tw-border-opacity: 1;
+  border-color: rgb(239 68 68 / var(--tw-border-opacity));
+}
+
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
@@ -764,6 +773,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .px-6 {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
+}
+
+.py-6 {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
 }
 
 .pb-52 {
@@ -853,6 +867,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-accentCyan {
   --tw-text-opacity: 1;
   color: hsl(176 68% 64% / var(--tw-text-opacity));
+}
+
+.text-red-500 {
+  --tw-text-opacity: 1;
+  color: rgb(239 68 68 / var(--tw-text-opacity));
 }
 
 .ficon:hover {

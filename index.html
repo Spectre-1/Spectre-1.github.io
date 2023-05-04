@@ -22,7 +22,7 @@
       }
     </script>
     <script src="js/script.js" defer></script>
-    
+    <script src="script.js"></script>
     <title>Philip Gudijanto</title>
   </head>
   <body class="dark:bg-darkBlue dark:text-white font-opensans">
@@ -195,7 +195,7 @@
           class="flex flex-col space-y-24 text-center md:flex-row md:space-y-0"
         >
           <!-- Item 1 -->
-          <div class="flex flex-col items-center space-y-2 md:w-1/2">
+          <div class="flex flex-col items-center space-y-2 md:w-1/2" >
             <div class="flex items-center justify-center h-24 mb-6">
               <img src="images/CarbonCopies.jpeg" alt="" class="mx-auto"style="width: 30%;" />
             </div>
@@ -246,13 +246,13 @@
         class="container flex flex-col items-center mx-auto px-6 pt-24 pb-32 md:flex-row md:space-x-16"
       >
         <!-- Project 1 -->
-          <div class="flex flex-col items-start md:w-1/2 mb-12">
+          <div class="flex flex-col items-start md:w-1/2 mb-12 ">
             <div class="flex flex-col space-y-5">
               <h4 class="max-w-md text-xl font-bold md:text-4l">
                 Fitness Tracker
               </h4>
               <p class="text-md md:text-lg">
-              <em>Figma, React Native</em> 
+              <em>Figma, React Native, Firebase</em> 
                 </p>
     
               <p class="text-md md:text-lg">
@@ -260,18 +260,17 @@
               </p>
     
               <p class="text-md md:text-lg">
-                Created a wireframe on Figma
+                Created a mockup of the fitness using industry tools such as Figma
                 <p class="text-md md:text-lg">
-                Currently prototyping the App in React Native
+                Currently prototyping the App in React Native with plans to use Firebase to handle data storage, analytics, and other functionalities.
                 </p>
                 </p>
               </div>
     
               <!-- Link -->
               <div class="block mt-4">
-                <a href="#" class="border-b border-accentCyan text-accentCyan">
-                  On pause for now
-                  <img src="images/icon-arrow.svg" alt="" class="inline pb-2" />
+                <a href="#" class="border-b border-red-500 text-red-500">
+                  On pause while looking for job opportunities
                 </a>
               </div>
             </div>
@@ -282,25 +281,25 @@
               This Website!
             </h4>
             <p class="text-md md:text-lg">
-              <em>Tailwindcss, HTML, Javascript</em> 
+              <em>Tailwind CSS, HTML, Javascript</em> 
             </p>
 
             <p class="text-md md:text-lg">
-              Developed a personal project using React Native to create a web app that displays a grid layout with various search algorithms for pathfinding.
+              Developed and designed a personal website using HTML, Tailwind CSS, and JavaScript. 
             </p>
 
             <p class="text-md md:text-lg">
-              Developed a personal project using React Native to create a web app that displays a grid layout with various search algorithms for pathfinding.
+              Implemented interactive features and functionality using JavaScript, such as a copy-to-clipboard button and a light mode/Dark mode toggle button and LinkedIn link that opens in a new tab. 
             </p>
 
             <p class="text-md md:text-lg">
-              Developed a personal project using React Native to create a web app that displays a grid layout with various search algorithms for pathfinding.
+              The website showcases my portfolio and projects, as well as my skills and experiences.
             </p>
           </div>
 
           <!-- Link -->
           <div class="block mt-4">
-            <a href="#" class="border-b border-accentCyan text-accentCyan">
+            <a href="https://github.com/Spectre-1/Spectre-1.github.io" target="_blank" class="border-b border-accentCyan text-accentCyan">
               Link to Github repo
               <img src="images/icon-arrow.svg" alt="" class="inline pb-2" />
             </a>
@@ -327,12 +326,11 @@
             <p class="text-md md:text-lg">
               Demonstrated problem-solving skills and proficiency in React Native by building a functional and user-friendly app.
             </p>
-            </p>
           </div>
 
           <!-- Link -->
           <div class="block mt-4">
-            <a href="#" class="border-b border-accentCyan text-accentCyan">
+            <a href="https://github.com/Spectre-1/PathV" target="_blank" class="border-b border-accentCyan text-accentCyan">
               Link to Github repo
               <img src="images/icon-arrow.svg" alt="" class="inline pb-2" />
             </a>
@@ -341,13 +339,15 @@
       </div>
     </section>
 
+    <!-- Contact Section -->
     <section id="Contact" class="pt-12 bg-gray-50 dark:bg-darkBlue1">
       <div
         class="max-w-4xl mx-auto px-6 space-y-10  text-center rounded-lg bg-gray-200 dark:bg-darkBlue1 md:px-16 pb-32"
       >
         <h5 class="text-2xl font-bold">Get in touch!</h5>
         <p class="text-sm">
-          If you want to get in touch with me, the best way is through email. 
+          If you want to get in touch with me, the best way is through email @pgudijan@uci.edu or click the button below to copy it to your clipboard. 
+          <br>
           Shoot me a message and I'll get back as soon as possible!
           <br>
           <br>
@@ -356,14 +356,17 @@
         <!-- Input & Button Container -->
         <div class="flex flex-col items-center justify-center space-y-6 md:flex-row md:justify-center md:space-y-0 md:space-x-6">
           <div class="text-center">
-          <button
-            class="w-full p-3 px-6 rounded-none bg-accentCyan md:w-56 hover:scale-95" 
+            <p id="item-to-copy" style="display:none;">pgudijan@uci.edu</p>
+            <button
+            class="w-full p-3 px-6 rounded-none bg-accentCyan md:w-56 hover:scale-95" onClick="copyItem()" 
           >
           pgudijan@uci.edu
           </button>
-            
+          <br>
+          <br>
+          <br>
           <button
-            class="w-full p-3 px-6 rounded-none bg-accentCyan md:w-56 hover:scale-95"
+            class="w-full p-3 px-6 rounded-none bg-accentCyan md:w-56 hover:scale-95" onClick="goToLinkedIn()"
           >
             LinkedIn
           </button>
@@ -372,90 +375,3 @@
     </section>
   </body>
 </html>
-
-   <!-- Education Section -->
-    <!-- <section id="Education" class="bg-white dark:bg-darkBlue">
-    <h1 class="max-w-2xl mx-auto mb-10 text-3xl font-bold leading-normal mt-14 md:text-4xl text-center ">
-      Education & Technical Skills
-    </h1>
-
-    <div class="container mx-auto px-6 text-center md:pt-20 pb-52 flex felx- col justify-center items-center"> -->
-    <!-- Education  -->
-    <!-- <div class="flex flex-col items-center w-full md:w-1/2 mb-12">
-        <h4 class="text-lg font-bold md:text-3xl">
-          Education
-        </h4>
-        <p class="text-md md:text-lg">
-          <em>University of California, Irvine</em> 
-        </p>
-
-        <p class="text-md md:text-lg">
-          June 2019 - present
-          <br>
-          Expected Graduation: June 2023
-        </p>
-
-        <p class="text-md md:text-lg">
-          B.S., Computer Science
-        </p>
-      </div> -->
-
-    <!-- Technical Skills  -->
-    <!-- <div class="flex flex-col items-center w-full md:w-1/2 mb-12">
-      <div class="flex flex-col items-start space-y-5 w-full max-w-md">
-        <h4 class="text-lg font-bold md:text-3xl">
-          Technical Skills
-        </h4>
-
-        <h4 class="text-base font-bold md:text-2xl">
-          Languages
-        </h4>
-
-        <div class="flex justify-between mb-1 ">
-          <span class="text-sm font-medium">C/C++</span>
-        </div>
-        <div class="w-full bg-gray-200 rounded-full h-4 mb-4 dark:bg-gray-700 ">
-          <div class="bg-blue-600 text-s font-medium text-blue-100 text-center p-0.5 leading-none rounded-full h-4" style="width: 70%"> </div>
-        </div>
-
-        <div class="flex justify-between mb-1">
-          <span class="text-sm font-medium">Python</span>
-        </div>
-        <div class="w-full bg-gray-200 rounded-full h-4 mb-4 dark:bg-gray-700">
-          <div class="bg-blue-600 text-s font-medium text-blue-100 text-center p-0.5 leading-none rounded-full h-4" style="width: 60%"> </div>
-        </div>
-
-        <div class="flex justify-between mb-1">
-          <span class="text-sm font-medium">Java</span>
-        </div>
-        <div class="w-full bg-gray-200 rounded-full h-4 mb-4 dark:bg-gray-700">
-          <div class="bg-blue-600 text-s font-medium text-blue-100 text-center p-0.5 leading-none rounded-full h-4" style="width: 40%"> </div>
-        </div>
-
-        <div class="flex justify-between mb-1">
-          <span class="text-sm font-medium">CSS/HTML</span>
-        </div>
-        <div class="w-full bg-gray-200 rounded-full h-4 mb-4 dark:bg-gray-700">
-          <div class="bg-blue-600 text-s font-medium text-blue-100 text-center p-0.1 leading-none rounded-full h-4" style="width: 40%"> </div>
-        </div>
-
-        <h4 class="text-base font-bold md:text-2xl">
-          FrameWork and Libraries
-        </h4>
-
-        <p class="text-md md:text-lg">
-          React.js, Node.js, Flask, React Native
-        </p>
-
-        <h4 class="text-base font-bold md:text-2xl">
-          Developer Tools
-        </h4>
-
-        <p class="text-md md:text-lg">
-          Git, GitLab, MongoDB, MySQL, Docker, Trello
-        </p>
-
-    </div>
-      </div> -->
-    <!-- </div>  
-    </section> -->
