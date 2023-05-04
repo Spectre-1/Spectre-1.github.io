@@ -29,15 +29,14 @@
     <!--Header-->
     <header class="container mx-auto mt-10 px-6 text-center h-40 md:h-20">
       <!--Dynamic Logo-->
-      <div class ="bg-logo-light-mode dark:bg-logo-dark-mode bg-no-repeat h-20 w-48 mx.auto md:mx-0 md:absolute top-10 left-10">
-      </div>
+      <!-- <img src="images/logo.svg" alt="logo" class="w-20 h-20 mx-auto" /> -->
       <!--menu-->
       <div class= "flex items-center justify-center space-x-4 md:space-x-10 md:absolute top-12 right-10">
-        <a href = "#features" class="hover:text-accentCyan">About me</a>
-        <a href = "#features" class="hover:text-accentCyan">Education & Skills</a>
-        <a href = "#features" class="hover:text-accentCyan">Experience</a>
-        <a href = "#features" class="hover:text-accentCyan">Projects</a>
-        <a href = "#features" class="hover:text-accentCyan">Contact Me!</a>
+        <a href = "#About Me" class="hover:text-accentCyan">About me</a>
+        <a href = "#Education" class="hover:text-accentCyan">Education & Skills</a>
+        <a href = "#Experience" class="hover:text-accentCyan">Experience</a>
+        <a href = "#Projects" class="hover:text-accentCyan">Projects</a>
+        <a href = "#Contact" class="hover:text-accentCyan">Contact Me!</a>
 
         <!-- Dark/Light Mode Button -->
         <button
@@ -74,20 +73,20 @@
       </div>
     </header>
 
-    <!-- Hero Section -->
+    <!-- About Me Section -->
     <section
-      id="hero"
+      id="About Me"
       class="bg-curvy-light-mode dark:bg-curvy-dark-mode bg-no-repeat bg-contain bg-bottom"
     >
       <!-- Hero Container -->
       <div class="container mx-auto px-6 text-center md:pt-20 pb-52">
-        <img src="images/illustration-intro.png" alt="" class="mx-auto" />
+        <img src="images/illustration-intro.png" alt="" class="mx-auto"style="width: 50%;" />
         <h1
           class="max-w-2xl mx-auto mb-10 text-3xl font-bold leading-normal mt-14 md:text-4xl"
         >
           About Me!
         </h1>
-        <p class="max-w-sm mx-auto mb-10 text-sm md:max-w-xl md:text-lg">
+        <p class="max-w-sm mx-auto mb-10 text-md md:max-w-xl md:text-lg">
           Hi! My name is Philip and I'm a 4th year student at University of California, Irvine. 
           I am going to be graduating in June 2023 with a B.S. in Computer Science.
           <br><br>
@@ -97,29 +96,197 @@
           and side projects such as this website!
         </p>
       </div>
-
     </section>
-      <!-- Hero Container -->
-      <div class="container mx-auto px-6 text-center md:pt-20 pb-52">
-        <img src="images/illustration-intro.png" alt="" class="mx-auto" />
-        <h1
-          class="max-w-2xl mx-auto mb-10 text-3xl font-bold leading-normal mt-14 md:text-4xl"
+    <!-- Education and Skills Section -->
+    <section id="Education" class="pt-12 bg-gray-50 dark:bg-darkBlue1">
+      <h1
+      class="max-w-2xl mx-auto mb-10 text-3xl font-bold leading-normal mt-14 md:text-4xl text-center"
+    >
+      Experience
+    </h1>
+      <!-- Features Container -->
+      <div class="container mx-auto px-6 pb-32">
+        <!-- First Row -->
+        <div
+          class="flex flex-col space-y-24 text-center md:flex-row md:space-y-0"
         >
-          Education & Skills
-        </h1>
-        <p class="max-w-sm mx-auto mb-10 text-sm md:max-w-xl md:text-lg">
-          <span class="education__title education">Education:</span>
-          <ul class="education__list education">
-            <li class="education__item">University of California - Irvine</li>
-            <li class="education__item">Expected Graduation: June 2023</li>
-            <li class="education__item">B.S. Computer Science</li>
-          </ul>
-        </p>
-        <button class="p-3 rounded-full w-52 bg-accentCyan hover:scale-95">
-          Get Started
-        </button>
+          <!-- Item 1 -->
+          <div class="flex flex-col items-center space-y-2 md:w-1/2">
+            <div class="flex items-center justify-center h-24 mb-6">
+              <img src="images/icon-access-anywhere.svg" alt="" />
+            </div>
+            <h3 class="text-xl font-bold">CarbonCopies Foundation</h3>
+            <h4 class="text-l font-bold">Backend Developer</h4>
+            <h4 class="text-l font-bold">Feb 2023 - Current</h4>
+            <p class="max-w-md">
+              The ability to use a smartphone, tablet, or computer to access
+              your account means your files follow you everywhere.
+            </p>
+          </div>
+          <!-- Item 2 -->
+            <div class="flex flex-col items-center space-y-2 md:w-1/2">
+            <div class="flex items-center justify-center h-24 mb-6">
+               <img src="images/icon-access-anywhere.svg" alt="" />
+            </div>
+            <h3 class="text-xl font-bold">Limon</h3>
+            <h4 class="text-l font-bold">Full Stack Developer</h4>
+            <h4 class="text-l font-bold">Feb 2022 - June 2022</h4>
+            <p class="max-w-md">
+              The ability to use a smartphone, tablet, or computer to access
+              your account means your files follow you everywhere.
+            </p>
+          </div>
+          <!-- Item 3 -->
+          <div class="flex flex-col items-center space-y-2 md:w-1/2">
+            <div class="flex items-center justify-center h-24 mb-6">
+              <img src="images/icon-access-anywhere.svg" alt="" />
+            </div>
+            <h3 class="text-xl font-bold">UCLA Katsushi Lab </h3>
+            <h4 class="text-l font-bold">Undergrad Student Researcher</h4>
+            <p class="max-w-md">
+              The ability to use a smartphone, tablet, or computer to access
+              your account means your files follow you everywhere.
+            </p>
+          </div>
       </div>
     </section>
-    
+
+    <!-- Project Section -->
+    <section id="Experience" class="bg-white dark:bg-darkBlue">
+      <h1
+      class="max-w-2xl mx-auto mb-10 text-3xl font-bold leading-normal mt-14 md:text-4xl text-center">
+      Projects
+    </h1>
+      <!-- Project Container -->
+      <div
+        class="container flex flex-col items-center mx-auto px-6 pt-24 pb-32 md:flex-row md:space-x-16"
+      >
+        <!-- Project 1 -->
+        <div class="flex flex-col items-start md:w-1/2 mb-12">
+          <div class="flex flex-col space-y-5">
+            <h4 class="max-w-md text-xl font-bold md:text-4l">
+              This Website!
+            </h4>
+            <p class="text-md md:text-lg">
+              <em>Tailwindcss, HTML, Javascript</em> 
+            </p>
+
+            <p class="text-md md:text-lg">
+              Developed a personal project using React Native to create a web app that displays a grid layout with various search algorithms for pathfinding.
+            </p>
+
+            <p class="text-md md:text-lg">
+              Developed a personal project using React Native to create a web app that displays a grid layout with various search algorithms for pathfinding.
+            </p>
+
+            <p class="text-md md:text-lg">
+              Developed a personal project using React Native to create a web app that displays a grid layout with various search algorithms for pathfinding.
+            </p>
+          </div>
+
+          <!-- Link -->
+          <div class="block mt-4">
+            <a href="#" class="border-b border-accentCyan text-accentCyan">
+              Link to Github repo
+              <img src="images/icon-arrow.svg" alt="" class="inline pb-2" />
+            </a>
+          </div>
+        </div>
+
+      <!-- Project 2 -->
+        <div class="flex flex-col items-start md:w-1/2 mb-12">
+          <div class="flex flex-col space-y-5">
+            <h4 class="max-w-md text-xl font-bold md:text-4l">
+              Pathfinding Visualizer
+            </h4>
+            <p class="text-md md:text-lg">
+              <em>React Native</em> 
+            </p>
+
+            <p class="text-md md:text-lg">
+              Developed a personal project using React Native to create a web app that displays a grid layout with various search algorithms for pathfinding.
+            </p>
+
+            <p class="text-md md:text-lg">
+              Implemented a feature for users to generate custom maze patterns and select the search algorithm to solve the maze            </p>
+
+            <p class="text-md md:text-lg">
+              Demonstrated problem-solving skills and proficiency in React Native by building a functional and user-friendly app.
+            </p>
+            </p>
+          </div>
+
+          <!-- Link -->
+          <div class="block mt-4">
+            <a href="#" class="border-b border-accentCyan text-accentCyan">
+              Link to Github repo
+              <img src="images/icon-arrow.svg" alt="" class="inline pb-2" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="Contact" class="bg-gray-50 dark:bg-darkBlue">
+      <!-- Contact Container -->
+      <div class="container mx-auto px-6 pt-12 pb-80 md:pb-96">
+        <!-- Boxes Container -->
+        <div class="relative flex flex-col items-center w-full space-y-6 md:flex-col md:space-y-0 md:space-x-12">
+
+          <!-- Box 1 -->
+          <div
+            class="flex flex-col p-10 space-y-6 rounded-lg bg-gray-100 dark:bg-darkBlue3 md:w-1/3"
+          >
+            <!-- Customer Info -->
+            <div class="flex space-x-4">
+              <img
+                src="PLACEHOLDER"
+                alt=""
+                class="w-10 h-10 rounded-full"
+              />
+              <div>
+                <h5 class="text-sm font-semibold">Email</h5>
+                <p class="text-xs font-extralight">Email LINK TBD</p>
+              </div>
+            </div>
+          </div>
+          <!-- Box 2 -->
+          <div
+            class="flex flex-col p-10 space-y-6 rounded-lg bg-gray-100 dark:bg-darkBlue3 md:w-1/3"
+          >
+            <!-- Customer Info -->
+            <div class="flex space-x-4">
+              <img
+                src="PLACEHOLDER"
+                alt=""
+                class="w-10 h-10 rounded-full"
+              />
+              <div>
+                <h5 class="text-sm font-semibold">LinkedIn</h5>
+                <p class="text-xs font-extralight">Linkedin LINK TBD</p>
+              </div>
+            </div>
+          </div>
+          <!-- Box 3 -->
+          <div
+            class="flex flex-col p-10 space-y-6 rounded-lg bg-gray-100 dark:bg-darkBlue3 md:w-1/3"
+          >
+            <!-- Customer Info -->
+            <div class="flex space-x-4">
+              <img
+                src="PlaceHolder"
+                alt=""
+                class="w-10 h-10 rounded-full"
+              />
+              <div>
+                <h5 class="text-sm font-semibold">Resume</h5>
+                <p class="text-xs font-extralight">Resume Download LINK</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
