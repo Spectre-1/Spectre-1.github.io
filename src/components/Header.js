@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '../images/icon.svg';  // Update this with the correct path
+import logo from '../Images/icon.svg';  // Update this with the correct path
 
 const Header = () => {
   return (

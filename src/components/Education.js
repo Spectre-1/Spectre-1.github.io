@@ -1,5 +1,5 @@
 import React from 'react';
-import universityLogo from '../images/The_University_of_California_Irvine.svg';  // Update this with the correct path
+import universityLogo from '../Images/The_University_of_California_Irvine.svg';  // Update this with the correct path
 
 const Education = () => {
   return (
